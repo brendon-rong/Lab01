@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/life_cycle_method_demontration"
+        android:textSize="24sp" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.lab1_ex2.ListViewActivities"
+        android:layout_width="match_parent"
+        android:layout_height="308dp" />
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.lab1_ex2.BottomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="352dp" />
+</LinearLayout>

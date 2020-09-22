@@ -1,0 +1,7 @@
+include ':PassDataActivity'
+include ':FragmentsExample'
+include ':Activity101'
+include ':SimpleIntent'
+include ':SimpleFragmentsExample'
+include ':app'
+rootProject.name = "Lab1_Ex2"
