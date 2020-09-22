@@ -16,11 +16,11 @@
         android:id="@+id/fragment2"
         android:name="com.example.lab1_ex2.ListViewActivities"
         android:layout_width="match_parent"
-        android:layout_height="308dp" />
+        android:layout_height="276dp" />
 
     <fragment
         android:id="@+id/fragment3"
         android:name="com.example.lab1_ex2.BottomFragment"
         android:layout_width="match_parent"
-        android:layout_height="352dp" />
+        android:layout_height="386dp" />
 </LinearLayout>
