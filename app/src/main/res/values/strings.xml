@@ -3,5 +3,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="life_cycle_method_demontration">Life Cycle Method Demontration</string>
-    
+    <string name="onStart">onStart executed</string>
+    <string name="onRestart">onRestart executed</string>
+    <string name="onResume">onResume executed</string>
+    <string name="onPause">onPause executed</string>
+    <string name="onStop">onStop executed</string>
+    <string name="onDestroy">onDestroy executed</string>
 </resources>
