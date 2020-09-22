@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fragment = (BottomFragment)getSupportFragmentManager().findFragmentById(R.id.fragment3);
+        fragment.display("onCreate() executed");
     }
 
     //
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onResume();
         Log.d(tag, "In the onResume() event");
-        fragment.display("onResume() executed");
+        //fragment.display("onResume() executed");
     }
     public void onPause()
     {

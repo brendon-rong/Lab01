@@ -42,7 +42,7 @@ public class BottomFragment extends Fragment {
 
     public void display(String msg){
         TextView tv = (TextView)getActivity().findViewById(R.id.textViewControl);
-        tv.setText(msg);
+        tv.setText(tv.getText().toString() + "\n" + msg);
     }
 
 }
