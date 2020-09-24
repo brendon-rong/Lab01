@@ -3,15 +3,14 @@ package com.example.lab1_ex2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
-public class aiActivity extends AppCompatActivity {
+public class vrActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ai);
+        setContentView(R.layout.activity_vr);
         display(getString(R.string.onCreate));
     }
 
@@ -49,9 +48,9 @@ public class aiActivity extends AppCompatActivity {
     }
 
     public void display(String msg){
-        TextView tv = findViewById(R.id.textViewAI);
-        if(msg.equalsIgnoreCase(getString(R.string.onPause)) || msg.equalsIgnoreCase(getString(R.string.onRestart)) ){
-            tv.setText("AI Activity:");
+        TextView tv = findViewById(R.id.textViewVR);
+        if(msg.equalsIgnoreCase(getString(R.string.onPause)) || msg.equalsIgnoreCase(getString(R.string.onRestart))){
+            tv.setText("VR Activity:");
         }
         tv.setText(tv.getText().toString() + "\n" + msg);
     }

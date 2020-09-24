@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A fragment representing a list of Items.
@@ -33,6 +34,7 @@ public class ListViewActivities extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list_view_activities, container, false);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, activity);
 
         final ListView listView = view.findViewById(R.id.listView);
 
@@ -43,13 +45,22 @@ public class ListViewActivities extends Fragment {
                 String tag = "poop";
                 Log.d(tag, item + " selected");
 
-                if(item.equalsIgnoreCase("AIActivity")){
+                switch(position){
+                    case 0:
+                        Toast.makeText(getContext(), item, Toast.LENGTH_LONG).show();
+                        Intent intent0 = new Intent(getActivity(), aiActivity.class);
+                        startActivity(intent0);
+                        break;
+                    case 1:
+                        Toast.makeText(getContext(), item, Toast.LENGTH_LONG).show();
+                        Intent intent1 = new Intent(getActivity(), vrActivity.class);
+                        startActivity(intent1);
+                        break;
 
                 }
             }
         });
-        
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, activity);
+
 
         listView.setAdapter(adapter);
         return view;

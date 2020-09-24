@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fragment = (BottomFragment)getSupportFragmentManager().findFragmentById(R.id.fragment3);
-        fragment.display("onCreate() executed");
+        fragment.display(getString(R.string.onCreate));
     }
 
     //
@@ -24,38 +24,39 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onStart();
         Log.d(tag, "In the onStart() event");
-        fragment.display("onStart() executed");
+        fragment.display(getString(R.string.onStart));
     }
     //
     public void onRestart()
     {
         super.onRestart();
         Log.d(tag, "In the onRestart() event");
-        fragment.display("onRestart() executed");
+        fragment.display(getString(R.string.onRestart));
+
     }
     public void onResume()
     {
         super.onResume();
         Log.d(tag, "In the onResume() event");
-        //fragment.display("onResume() executed");
+        fragment.display(getString(R.string.onResume));
     }
     public void onPause()
     {
         super.onPause();
         Log.d(tag, "In the onPause() event");
-        fragment.display("onPause() executed");
+        fragment.display(getString(R.string.onPause));
     }
     //
     public void onStop()
     {
         super.onStop();
         Log.d(tag, "In the onStop() event");
-        fragment.display("onStop() executed");
+        fragment.display(getString(R.string.onStop));
     }
     public void onDestroy()
     {
         super.onDestroy();
         Log.d(tag, "In the onDestroy() event");
-        fragment.display("onDestroy() executed");
+        fragment.display(getString(R.string.onDestroy));
     }
 }

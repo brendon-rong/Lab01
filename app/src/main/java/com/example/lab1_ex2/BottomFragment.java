@@ -42,7 +42,11 @@ public class BottomFragment extends Fragment {
 
     public void display(String msg){
         TextView tv = (TextView)getActivity().findViewById(R.id.textViewControl);
+        if(msg.equalsIgnoreCase(getString(R.string.onPause)) || msg.equalsIgnoreCase(getString(R.string.onRestart)) ){
+            tv.setText("Main Activity:");
+        }
         tv.setText(tv.getText().toString() + "\n" + msg);
     }
+
 
 }

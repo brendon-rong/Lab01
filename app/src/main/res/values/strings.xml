@@ -2,11 +2,21 @@
     <string name="app_name">Lab1_Ex2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Main Activity: </string>
-    <string name="life_cycle_method_demontration">Life Cycle Method Demontration</string>
+    <string name="life_cycle_method_demonstration">Life Cycle Method Demonstration</string>
+    <string name="onCreate">onCreate executed</string>
     <string name="onStart">onStart executed</string>
     <string name="onRestart">onRestart executed</string>
     <string name="onResume">onResume executed</string>
     <string name="onPause">onPause executed</string>
     <string name="onStop">onStop executed</string>
     <string name="onDestroy">onDestroy executed</string>
+    <string name="title_activity_vr">vrActivity</string>
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="aiactivity">AIActivity:</string>
+    <string name="vractivity">VRActivity:</string>
 </resources>
