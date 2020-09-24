@@ -61,7 +61,6 @@ public class ListViewActivities extends Fragment {
             }
         });
 
-
         listView.setAdapter(adapter);
         return view;
     }
