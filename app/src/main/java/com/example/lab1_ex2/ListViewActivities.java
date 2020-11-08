@@ -34,6 +34,7 @@ public class ListViewActivities extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list_view_activities, container, false);
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, activity);
 
         final ListView listView = view.findViewById(R.id.listView);
@@ -42,8 +43,6 @@ public class ListViewActivities extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
                 String item = (String) listView.getItemAtPosition(position);
-                String tag = "poop";
-                Log.d(tag, item + " selected");
 
                 switch(position){
                     case 0:
@@ -60,14 +59,6 @@ public class ListViewActivities extends Fragment {
                 }
             }
         });
-
-
-
-
-
-
-
-
 
         listView.setAdapter(adapter);
         return view;

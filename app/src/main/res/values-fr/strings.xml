@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BrendonRongcales_CENG319Lab1_Ex2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Activité principale: </string>
+    <string name="life_cycle_method_demonstration">Démonstration de la méthode du cycle de vie</string>
+    <string name="onCreate">surCreate executed</string>
+    <string name="onStart">surCreate exécuté</string>
+    <string name="onRestart">surRedémarrage exécuté</string>
+    <string name="onResume">surReprendre exécuté</string>
+    <string name="onPause">surPause exécuté</string>
+    <string name="onStop">surArrêtez exécuté</string>
+    <string name="onDestroy">surDétruire exécuté</string>
+    <string name="title_activity_vr">vrActivité</string>
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.resumedestroy
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="aiactivity">AIActivité:</string>
+    <string name="vractivity">VRActivité:</string>
+</resources>
